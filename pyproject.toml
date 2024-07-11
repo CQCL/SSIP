@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "ssip"
+version = "0.1.0"
+description = "\"Tools to perform surgery with CSS codes\""
+authors = ["Alexander Cowtan <alexander.cowtan@quantinuum.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^1.26.4"
+networkx = "^3.3"
+z3-solver = "^4.13.0.0"
+pytest-cov = "^5.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.359"
+ruff = "^0.4.0"
+pytest = "^8.1.1"
+
+[tool.poetry.group.docs]
+optional = true
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^7.2.6"
+sphinx-book-theme = "^1.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
