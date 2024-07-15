@@ -1,6 +1,13 @@
 # SSIP
 
+SSIP is availabe from PyPi for Python >= 3.10: 
+
+```sh
+pip install ssip
+```
+
 See the [documentation](https://cqcl.github.io/SSIP/api-docs/) for a more thorough description.
+
 
 ## Development
 
