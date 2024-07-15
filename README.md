@@ -1,5 +1,7 @@
 # SSIP
 
+See the [documentation](https://cqcl.github.io/SSIP/api-docs/) for a more thorough description.
+
 ## Development
 
 ### Prerequisites
