@@ -1,6 +1,6 @@
 # SSIP
 
-SSIP is availabe from PyPi for Python >= 3.10: 
+SSIP is available from PyPi for Python >= 3.10: 
 
 ```sh
 pip install ssip
