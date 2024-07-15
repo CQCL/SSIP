@@ -28,7 +28,7 @@ There is a directory of demo scripts available in the Github repository. For mor
 How to cite
 ~~~~~~~~~~~
 
-If you wish to cite SSIP in an academic publication, we recommend citing the relevant paper [TODO].
+If you wish to cite SSIP in an academic publication, we recommend citing the `software paper <https://arxiv.org/abs/2407.09423>`_. Should you wish, there is also a paper which sets up the theoretical framework used by SSIP, see `here <https://arxiv.org/abs/2301.13738>`_.
 
 
 User support
