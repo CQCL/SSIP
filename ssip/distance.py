@@ -85,11 +85,14 @@ def distance_lower_bound_z3(Hx: BinMatrix, Lx: BinMatrix, d: int) -> list | None
     m, n = Hx.shape
     k, n1 = Lx.shape
 
+    if n != n1:
+        raise ValueError("Stabiliser and logical matrices must have compatible sizes.")
+
     solver = Solver()
     add = solver.add
     v = [Bool("v%d" % i) for i in range(n)]
 
-    term = Sum([If(v[i], 1, 0) for i in range(n)]) == d
+    term = Sum([If(v[i], 1, 0) for i in range(n)]) <= d
     add(term)
 
     def check(hx):
@@ -118,7 +121,7 @@ def distance_lower_bound_z3(Hx: BinMatrix, Lx: BinMatrix, d: int) -> list | None
 
     assert compose_to_zero(Hx, np.array([v]).T), "bug bug... try updating z3?"
     assert not compose_to_zero(Lx, np.array([v]).T), "bug bug... try updating z3?"
-    assert sum(v) == d, ".sum(v)==%d: bug bug... try updating z3?" % sum(v)
+    assert sum(v) <= d, "sum(v)=%d: bug bug... try updating z3?" % sum(v)
     return v
 
 

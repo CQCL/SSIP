@@ -56,3 +56,5 @@ def test_gap_distance():
 def test_lower_bound():
     Lx = np.array(find_X_basis(Shor_code))
     assert distance_lower_bound_z3(Shor_B, Lx, 2) is None
+    assert distance_lower_bound_z3(Shor_B, Lx, 3) is not None
+    assert distance_lower_bound_z3(Shor_B, Lx, 4) is not None
