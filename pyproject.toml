@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ssip"
-version = "0.1.0"
+version = "0.1.1"
 description = "\"Tools to perform surgery with CSS codes\""
 authors = ["Alexander Cowtan <alexander.cowtan@quantinuum.com>"]
 readme = "README.md"
